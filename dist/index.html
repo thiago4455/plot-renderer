@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ploting Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>Requires javascript</noscript>
+    <canvas id="canvas"></canvas>
+    <input id="function-input" type="text" placeholder="sin(PI*x)" value="sin(PI*x)">
+    <script>
+        var canvas = document.getElementById("canvas");
+        var input = document.getElementById("function-input");
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var gl = canvas.getContext("webgl2")
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
